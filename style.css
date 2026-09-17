@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+    
+}
+body{
+    background: url(background.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+    color: #fff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FF4FA3, #B565F5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #F5F0FF;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: Arial, sans-serif;
+
+}
+.navbar ul li a:hover{
+    color: #B565F5;
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 0;
+    max-width: 420px;
+}
+
+.srch{
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #F5F0FF;
+    background: rgba(20, 8, 40, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    backdrop-filter: blur(8px);
+    transition: border-color 0.2s ease;
+}
+
+.srch::placeholder{
+    color: #C9BFDB;
+}
+
+.srch:focus{
+    border-color: #FF4FA3;
+}
+
+.search .btn{
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    
+    background: linear-gradient(90deg, #FF4FA3, #B565F5);
+    color: #FFFFFF;
+    border-radius: 0 6px 6px 0;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 79, 163, 0.3);
+}
+
+.hero{
+    padding: 100px 60px;
+    max-width: 700px;
+}
+.hero h1{
+    font-size: 48px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #F5F0FF;
+    font-family: 'Georgia', serif;
+}
+.hero h1 span{
+    color: #FFD6EC;
+}
+.hero p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin-bottom: 24px;
+}
+.btn{
+    display: inline-block;
+    gap: 10px;
+    
+   
+    
+    padding: 10px 20px;
+   
+    background: linear-gradient(90deg, #FF4FA3, #B565F5);
+    color: #FFFFFF;
+    border-radius: 0 4px 4px 0;
+    text-decoration: none;
+    white-space: 2px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+
+}
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 79, 163, 0.3);
+}
+
+.form{
+    max-width: 380px;
+    height: auto;
+    padding: 40px 36px 30px;
+    background: rgba(20, 8, 40, 0.5);
+    position: absolute;
+    top: 140px;
+    right: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.form input{
+    padding: 14px 18px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #F5F0FF;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form input::placeholder{
+    color: #C9BFDB;
+}
+
+.form input:focus{
+    border-color: #FF4FA3;
+}
+
+.form .btn{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #FF4FA3, #B565F5);
+    color: #FFFFFF;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 79, 163, 0.35);
+}
+
+.form .liw{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #C9BFDB;
+    margin: 0;
+}
+
+.form .liw a{
+    color: #FF4FA3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form .liw a:hover{
+    text-decoration: underline;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 10px;
+    color: black;
+}
